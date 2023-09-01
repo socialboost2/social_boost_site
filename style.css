@@ -1,0 +1,156 @@
+/* global */
+
+:root{
+	--main-background-color: #ddd;
+	--blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
+*{margin: 0; padding: 0}
+body{
+	background-color: var(--main-background-color);
+	font-family: Mypro, sans-serif;
+	scroll-behavior: smooth;
+}
+ul{list-style: none}
+a{text-decoration: none; color: #19407f}
+.container{padding: 12px}
+h2.title{
+	text-transform: capitalize;
+	font-size: 40px;
+	width: fit-content;
+	margin: 30px auto;
+	padding: 5px 10px;
+	border: 1px solid white;
+/*	color: black;*/
+	transition: 0.3s;
+	position: relative;
+}
+h2.title::before{
+	position: absolute;
+	content: "{";
+	left: -20px;
+	transition: 0.3s;
+}
+h2.title::after{
+	position: absolute;
+	content: "}";
+	right: -20px;
+	transition: 0.3s;
+}
+h2.title:hover{
+	background-color: black;
+	color: white;
+}
+h2.title:hover::before{left: -50px}
+h2.title:hover::after{right: -50px}
+
+/* global */
+
+/* header links */
+
+.header{background-color: white; position: relative}
+.header .container{font-weight: bold}
+.header .container .links{font-size: 20px}
+.header .container .links li:not(:last-child){padding: 10px}
+.header .container .links li a.active{color: black}
+.header .container .links li a:hover{color: black}
+
+/* phone */
+
+@media(min-width: 767px){.header .container .toggle-menu{display: none}}
+
+@media(max-width: 767px){
+	.header .container .logo h1{font-size: 20px}
+	.header .container .links{display: none}
+	.header .container .toggle-menu:hover + .links{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 35px;
+		left: 0;
+		width: 100%;
+		background-color: #aaa1a1f2;
+		z-index: 5;
+	}
+	.header .container .links li{
+		padding: 20px 0;
+
+	}
+}
+
+/* header links */
+
+/* about us */
+
+.about-us .container .data h3{font-size: 30px; padding-top: 40px}
+.about-us .container .data p{font-size: 20px}
+.about-us .container .data p span{
+	padding: 10px;
+	transition: 0.5s;
+	cursor: pointer
+}
+.about-us .container .data p span:hover{
+	background-color: black;
+	color: white;
+}
+
+/* about us */
+
+/* portfolio */
+
+.portfolio .container{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+}
+
+/* phone */
+
+@media(max-width: 767px){
+	.portfolio .container{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 1fr);
+	gap: 10px;
+	}
+}
+
+.portfolio .container .box{}
+.portfolio .container .box img{
+	width: 350px;
+	opacity: 0.8;
+}
+.portfolio .container .box img:hover{opacity: 1}
+
+/* portfolio */
+
+/* contact us */
+
+.contact-us .container .data,
+.contact-us .container .data-reverse{
+	width: 30%;
+	margin-left: auto;
+    margin-right: auto;
+	background-color: #eee;
+	border-radius: 6px;
+	font-size: 20px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+.contact-us .container .data-reverse{flex-direction: row-reverse}
+.contact-us .container .data:hover,
+.contact-us .container .data-reverse:hover{background-color: #444}
+.contact-us .container .data i{border-right: 1px solid black}
+.contact-us .container .data-reverse i{border-left: 1px solid black}
+.contact-us .container span{margin: 0 auto}
+
+/* phone */
+
+@media(max-width: 767px){
+	.contact-us .container .data,
+	.contact-us .container .data-reverse{width: 100%}}
+
+/* contact us */

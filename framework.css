@@ -1,0 +1,131 @@
+
+/* basic */
+
+.m-padding{padding: 100px 0}
+
+/* basic */
+
+
+/* display */
+
+.d-flex{display: flex}
+.d-block{display: block}
+
+/* componants */
+
+.align-flex{display: flex; align-items: center}
+.between-flex{display: flex; align-items: center; justify-content: space-between}
+
+/* componants */
+
+
+/* display */
+
+/* width  */
+
+.w-full{width: 100%}
+.fit-w{width: fit-content;}
+
+/* width  */
+
+/* text */
+
+.text-c{text-align: center}
+
+/* text */
+
+
+
+/* colors */
+
+.c-gray{color: gray}
+.c-black{color: black}
+
+/* colors */
+
+/* background */
+
+.bg-white{background-color: white}
+.bg-gray{background-color: gray}
+.bg-black{background-color: black}
+
+/* background */
+
+
+/* fonts */
+
+.fs-15{font-size: 15px}
+
+/* fonts */
+
+
+
+/* sizeing */
+
+
+
+/* padding */
+
+/* all */
+
+.p-10{padding: 10px}
+.p-15{padding: 15px}
+
+/* top */
+
+/* right */
+
+/* bottom */
+
+/* left */
+
+.pl-10{padding-left: 10px}
+.pl-20{padding-left: 20px}
+
+/* padding */
+
+
+/* margin */
+
+/* all */
+
+.m-15{margin: 15}
+
+/* top */
+
+.mt-10{margin-top: 10}
+.mt-15{margin-top: 15}
+
+/* right */
+
+.mr-15{margin-right: 15px}
+
+/* bottom */
+
+.mb-5{margin-bottom: 5px}
+.mb-10{margin-bottom: 10px}
+.mb-15{margin-bottom: 15px}
+
+/* left */
+
+.ml-15{margin-left: 15px}
+
+/* margin */
+
+
+/* sizeing */
+
+
+
+/* border */
+
+.border-fff{border: 1px solid #ffffff}
+
+/* border */
+
+
+/* radius */
+
+.rad-50{border-radius: 50%}
+
+/* radius */

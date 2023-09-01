@@ -101,7 +101,7 @@ h2.title:hover::after{right: -50px}
 /* phone */
 
 @media(max-width: 767px){
-	.about-us .container .data p span{line-height: 2}
+	.about-us .container .data p span{line-height: 3}
 }
 
 /* about us */

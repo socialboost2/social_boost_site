@@ -122,6 +122,7 @@ h2.title:hover::after{right: -50px}
 	grid-template-columns: repeat(auto-fill, 1fr);
 	gap: 10px;
 	}
+	.portfolio .container .box img{with: 100%}
 }
 
 .portfolio .container .box{}
